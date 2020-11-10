@@ -1,10 +1,9 @@
 /**
  * 
  */
-package br.com.aulajava;
 
 /**
- * @author andre
+ * @author tec46
  *
  */
 public class Main {
