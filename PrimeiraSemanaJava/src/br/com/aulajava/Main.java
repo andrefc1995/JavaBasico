@@ -1,6 +1,7 @@
 /**
  * 
  */
+package br.com.aulajava;
 
 /**
  * @author tec46
