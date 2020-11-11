@@ -17,8 +17,8 @@ public class CalcularSalario {
 
 		float salariobase = 1546.3f;
 		float valorvendas = 1400.55f;
-		double percentual = valorvendas / 100;
-		double comissao = salariobase + (percentual * salariobase);
+		double percentual = 10 / 100;
+		double comissao = percentual * valorvendas;
 		double salariofinal = comissao + salariobase;
 		System.out.println(salariofinal);
 
