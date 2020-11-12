@@ -4,6 +4,7 @@
 package br.com.aulajava;
 
 import java.util.Date;
+import java.util.Scanner;
 
 /**
  * @author tec46
@@ -19,11 +20,11 @@ public class Main {
 
 		Calculadora c = new Calculadora();
 
-		System.out.println(c.realizarMultiplicacao(10));
+//		System.out.println(c.realizarMultiplicacao(10));
 
-		System.out.println(c.realizaSoma(10));
+//		System.out.println(c.realizaSoma(10));
 
-		System.out.println(Calculadora.valorPadraoSomaInteiro);
+//		System.out.println(Calculadora.valorPadraoSomaInteiro);
 
 		byte b;
 		short s = 32; // - 32000 até 32000
@@ -34,7 +35,26 @@ public class Main {
 		boolean bol = true; // valores true e false
 		char ch = 'A'; // 'a'
 
-		System.out.println(ch);
+//		System.out.println(ch);
+		
+		Scanner sc = new Scanner(System.in);
+		
+		float numF = sc.nextFloat();
+		System.out.println(numF);
+		int num1 = sc.nextInt();
+		System.out.println(num1);
+		byte byte1 = sc.nextByte();
+		System.out.println(byte1);
+		long lg1 = sc.nextLong();
+		System.out.println(lg1);
+		boolean b1 = sc.nextBoolean();
+		System.out.println(b1);
+		double num2 = sc.nextDouble();
+		System.out.println(num2);
+		String nome = sc.nextLine();
+		System.out.println(nome);
+		
+		
 	}
 
 }

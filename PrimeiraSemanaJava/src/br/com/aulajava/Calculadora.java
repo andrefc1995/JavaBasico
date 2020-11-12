@@ -18,5 +18,4 @@ public class Calculadora {
 		return valor + this.valorPadraoSoma;
 
 	}
-
 }
