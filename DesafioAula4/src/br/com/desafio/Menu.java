@@ -14,15 +14,15 @@ public class Menu {
 		int numero = sc.nextInt();
 		switch (numero) {
 		case 1:
-			System.out.println(c.selecionarOpcao1());
+			c.selecionarOpcao1();
 			break;
 
 		case 2:
-			System.out.println(c.selecionarOpcao2();
+			c.selecionarOpcao2();
 			break;
 			
 		case 3:
-			System.out.println(c.selecionarOpcao3();
+			c.selecionarOpcao3();
 			break;
 		
 	}

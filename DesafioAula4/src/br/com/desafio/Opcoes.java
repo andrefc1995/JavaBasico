@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class Opcoes {
 	public void selecionarOpcao1() {
+		String controle = "C";
+		while (controle != "gato") {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Qual o nome do seu animal favorito? ");
 		String animal = sc.nextLine();
@@ -11,20 +13,20 @@ public class Opcoes {
 			System.out.println("Que legal o meu também");
 		} else {
 			System.out.println("Eu prefiro gato..");
-		}
-
+		} 
 	}
-
+}
+	int idade;
 	public void selecionarOpcao2() {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Qual a idade do seu filho? ");
+		System.out.println("Qual a idade do seu filho? ");
 		int idade = sc.nextInt();
 		if (idade < 0 && idade > 12) {
-			System.out.print("Ele ainda é uma criança");
+			System.out.println("Ele ainda é uma criança");
 		} else if (idade < 1 && idade > 19) {
-			System.out.print("Adolescência é fogo..");				
+			System.out.println("Adolescência é fogo..");				
 		} else if (idade > 18) {
-			System.out.print("Ele já é um adulto!");
+			System.out.println("Ele já é um adulto!");
 		}
 	}
 
