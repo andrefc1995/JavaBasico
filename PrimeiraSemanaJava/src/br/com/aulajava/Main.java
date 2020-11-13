@@ -20,11 +20,11 @@ public class Main {
 
 		Calculadora c = new Calculadora();
 
-//		System.out.println(c.realizarMultiplicacao(10));
+		System.out.println(c.realizarMultiplicacao(10));
 
-//		System.out.println(c.realizaSoma(10));
+		System.out.println(c.realizaSoma(10));
 
-//		System.out.println(Calculadora.valorPadraoSomaInteiro);
+		System.out.println(Calculadora.valorPadraoSomaInteiro);
 
 		byte b;
 		short s = 32; // - 32000 até 32000
