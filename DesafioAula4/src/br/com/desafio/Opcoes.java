@@ -3,34 +3,48 @@ package br.com.desafio;
 import java.util.Scanner;
 
 public class Opcoes {
+
+	Scanner sc = new Scanner(System.in);
+
 	public void selecionarOpcao1() {
-		String controle = "C";
-		while (controle != "gato") {
-		Scanner sc = new Scanner(System.in);
-		System.out.print("Qual o nome do seu animal favorito? ");
-		String animal = sc.nextLine();
-		if (animal == "gato") {
-			System.out.println("Que legal o meu também");
-		} else {
-			System.out.println("Eu prefiro gato..");
-		} 
+		// Aproveite o código nesse trecho...
+		// Extract Method no eclipse para gerar método de trecho
+		String animal;
+		do {
+			animal = lerAnimal();
+			Impressora.imprimaValor("Eu prefiro gato..");
+		} while (!animal.toLowerCase().equals("gato"));
+		Impressora.imprimaValor("O meu também!");
 	}
-}
-	int idade;
-	public void selecionarOpcao2() {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Qual a idade do seu filho? ");
+
+	public String lerAnimal() {
+		Impressora.imprimaValor("Qual seu animal preferido ? ");
+		return sc.nextLine();
+	}
+
+	public int selecionarOpcao2() {
+		Impressora.imprimaValor("Qual a idade do seu filho");
 		int idade = sc.nextInt();
-		if (idade < 0 && idade > 12) {
-			System.out.println("Ele ainda é uma criança");
-		} else if (idade < 1 && idade > 19) {
-			System.out.println("Adolescência é fogo..");				
-		} else if (idade > 18) {
-			System.out.println("Ele já é um adulto!");
+		if (idade > 0 && idade < 12) {
+			Impressora.imprimaValor("Ele ainda é uma criança");
+		} else if (idade > 11 && idade < 19) {
+			Impressora.imprimaValor("Adolescência é fogo..");
+		} else {
+			Impressora.imprimaValor("Ele já é um adulto!");
+		}
+		return idade;
+	}
+
+	public void selecionarOpcao3(int idade) {
+
+		if (idade == 0) {
+			Impressora.imprimaValor("É necessário informar a idade na opção 2");
+		} else {
+			for (int i = 0; i < idade; i++) {
+				Impressora.imprimaValor(i + "...");
+			}
+			Impressora.imprimaValor(idade + " são tanto anos... ");
 		}
 	}
 
-	public void selecionarOpcao3() {
-		System.out.print("Em construção será que vamos aprender a usar o for..");
-	}
 }
